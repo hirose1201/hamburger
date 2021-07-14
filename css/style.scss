@@ -1,6 +1,35 @@
 @charset "utf-8";
+
  //====================
  //foundation
  //====================
-@import "./foundation/reset";  /*_reset.scssを読み込む */
-@import "./foundation/base";  /*_base.scssを読み込む */
+ @import "./foundation/reset";  /*_reset.scssを読み込む */
+ @import "./foundation/base";  /*_base.scssを読み込む */
+ @import "./foundation/mixin";  
+ 
+//====================
+//layout
+//====================
+  @import "./layout/l-header";  
+  @import "./layout/l-sidebar";  
+  @import "./layout/l-main";  
+  @import "./layout/l-footer";  
+
+//====================
+ //object
+ //====================
+
+  //componnet
+  @import "./object/component/c-left__wrapper";  
+  @import "./object/component/c-main__visual";  
+  @import "./object/component/c-sidebar__cover";  
+  @import "./object/component/c-sidebar__button";  
+  @import "./object/component/c-hamburger__button"; 
+  @import "./object/component/c-active";
+  @import "./object/component/c-cancel"; 
+
+  //project
+  @import "./object/project/p-navigation";  
+  @import "./object/project/p-service";  
+  @import "./object/project/p-access";  
+  @import "./object/project/p-search";  

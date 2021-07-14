@@ -1,0 +1,29 @@
+.p-search {
+  margin: 0 0 0 auto;
+
+  .p-search__container{
+    margin-right: 30px;
+  }
+  
+  input[type=text] {  
+    width: 396px;
+    height: 46px;
+    background: #fff;
+    border: 1px solid #707070;  /* 枠線 */
+    border-radius: 0.8em;   /* 角丸 仮 */
+  }
+  
+  input[type=submit]{
+    width: 136px;
+    height: 46px;
+    background-color: #F2EDE9;
+    border: 1px solid #707070;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 仮 */
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    text-align: center ;
+    cursor: pointer;
+  }
+  
+}

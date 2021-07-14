@@ -1,0 +1,10 @@
+.c-sidebar__button {
+  display: none;
+  width: 32px;
+  height: 32px;
+  float: right;
+
+  @include tab {
+    display: block;
+  }
+}

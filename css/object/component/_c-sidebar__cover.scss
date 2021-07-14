@@ -1,0 +1,11 @@
+.c-sidebar__cover {
+ display: none;
+ 
+ @include tab {
+   display: block;
+   height: 100%; //仮
+   width: 56%;
+   background-color: black;
+   opacity: 0.2;
+  }
+}

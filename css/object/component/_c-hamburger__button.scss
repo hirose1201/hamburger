@@ -1,0 +1,12 @@
+.c-hamburger__button {
+  display: none;
+  font-size: 3.4rem;
+  font-weight: bold;
+  font-family: "Roboto";
+  @include tab {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

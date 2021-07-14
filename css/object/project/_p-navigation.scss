@@ -1,0 +1,22 @@
+.p-navigation {
+  background-color: #F2EDE9;
+  width: 100%; //l-sidebarに対して
+  height: 100%; //l-sidebarに対して、100%設定
+  @include tab{
+    width: 44%; //l-sidebarに対して
+  }
+  
+  .p-navigation__main {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-top: 217px;
+    padding-left: 38px;
+    line-height: 2; //仮
+
+    .p-navigation__sub {
+      font-size: 2.0rem;
+      font-weight: normal;
+      line-height: 2; //仮
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.p-service {
+  width: 100%;
+  height: 800px; //l-mainに対しての数値
+  
+  @include sp {
+    height: 1500px; //仮
+  }
+ 
+  .p-service__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px; //仮
+    margin-bottom: 134px; //仮
+    @include sp {
+      display: block;
+    }
+
+    .p-service__takeout {
+      background-color: darksalmon;
+      background-image: url("./../img/frontpage_p-service__content--takeout.png");
+      height: 625px; 
+      width: 40%; //mainに対しての数値
+      margin: 0 15px; //仮
+    }
+
+    .p-service__eatin {
+      background-color: darksalmon;
+      background-image: url("./../img/frontpage_p-service__content--eatin.png");
+      height: 625px; 
+      width: 40%; //mainに対しての数値
+      margin: 0 15px; //仮
+    }
+
+    .p-service__heading {
+      font-size: 8.0rem;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}
