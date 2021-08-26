@@ -1,0 +1,5 @@
+.u-active--opacity {
+  @include tab {
+    opacity: 1;
+  }
+}

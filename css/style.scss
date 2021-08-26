@@ -1,35 +1,42 @@
 @charset "utf-8";
 
- //====================
- //foundation
- //====================
- @import "./foundation/reset";  /*_reset.scssを読み込む */
- @import "./foundation/base";  /*_base.scssを読み込む */
- @import "./foundation/mixin";  
- 
+//====================
+//foundation
+//====================
+@import "./foundation/reset";  
+@import "./foundation/base";  
+@import "./foundation/mixin";  
+
 //====================
 //layout
 //====================
-  @import "./layout/l-header";  
-  @import "./layout/l-sidebar";  
-  @import "./layout/l-main";  
-  @import "./layout/l-footer";  
+@import "./layout/l-header";  
+@import "./layout/l-main";  
+@import "./layout/l-sidebar";  
+@import "./layout/l-footer"; 
 
 //====================
  //object
  //====================
 
   //componnet
-  @import "./object/component/c-left__wrapper";  
-  @import "./object/component/c-main__visual";  
-  @import "./object/component/c-sidebar__cover";  
-  @import "./object/component/c-sidebar__button";  
-  @import "./object/component/c-hamburger__button"; 
-  @import "./object/component/c-active";
-  @import "./object/component/c-cancel"; 
+  @import "./object/component/c-mainvisual__frontpage";
+  @import "./object/component/c-button--hamburgermenu";
+  @import "./object/component/c-button--sidebar";
 
   //project
-  @import "./object/project/p-navigation";  
-  @import "./object/project/p-service";  
-  @import "./object/project/p-access";  
-  @import "./object/project/p-search";  
+  @import "./object/project/p-header";
+  @import "./object/project/p-footer";
+  @import "./object/project/p-service";
+  @import "./object/project/p-access";
+  @import "./object/project/p-sidebar";
+  @import "./object/project/p-navigation";
+  @import "./object/project/p-search";
+
+  //utility
+  @import "./object/utility/u-container__top";
+  @import "./object/utility/u-container__left";
+  @import "./object/utility/u-active";
+  @import "./object/utility/u-cancel";
+  @import "./object/utility/u-active--opacity";
+  @import "./object/utility/u-cancel--opacity";

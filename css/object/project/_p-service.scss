@@ -1,40 +1,161 @@
 .p-service {
-  width: 100%;
-  height: 800px; //l-mainに対しての数値
-  
-  @include sp {
-    height: 1500px; //仮
+  margin-top: 120px; 
+  margin-bottom: 134px;
+  display: flex; //横並び
+  justify-content: center; //左右中央
+  @include tab {
+    margin: 40px;
   }
- 
-  .p-service__wrapper {
+  @include sp {
+    flex-flow: column; //縦並び
+    align-items: center; 
+    margin: 18px 20px;
+  }
+
+  .p-service__content {
+    width: 40.24%;
+    height: 1193px;
+    position: relative;
     display: flex;
-    justify-content: center;
-    padding-top: 120px; //仮
-    margin-bottom: 134px; //仮
+    flex-flow: column; //縦並び
+    padding: 20px 20px 0 20px; //内側の余白
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    @include tab {
+      width: 50%; 
+      height: 681px;
+      margin: 0;
+      padding: 11px 12px;
+    }
     @include sp {
-      display: block;
+      width: 100%;
+      height: 642px;
+      padding: 11px 10px;
+      
+
     }
 
-    .p-service__takeout {
-      background-color: darksalmon;
-      background-image: url("./../img/frontpage_p-service__content--takeout.png");
-      height: 625px; 
-      width: 40%; //mainに対しての数値
-      margin: 0 15px; //仮
-    }
-
-    .p-service__eatin {
-      background-color: darksalmon;
-      background-image: url("./../img/frontpage_p-service__content--eatin.png");
-      height: 625px; 
-      width: 40%; //mainに対しての数値
-      margin: 0 15px; //仮
-    }
-
-    .p-service__heading {
+    h2 {
       font-size: 8.0rem;
       font-weight: bold;
       color: #fff;
+      @include tab {
+        font-size: 4.4rem;
+      }
+      @include sp {
+        font-size: 4.1rem;
+      }
+    }
+
+    .p-service__separator {
+      width: 63px;
+      height: 4px;
+      background-color: #fff;
+      margin-top: 34.5px;
+      margin-left: 20px;
+      @include tab {
+        width: 35.94px;
+        margin-top: 21.6px;
+        margin-left: 12px;
+      }
+      @include sp {
+        display: none;
+      }
+    }
+
+    //製品について。白枠の中
+    .p-service__product {
+      width: calc(100% - 40px);
+      position: absolute;
+      bottom: 20px;
+      color: #3C2A10; //指定あり
+      @include tab {
+        width: calc(100% - 24px);
+        bottom: 11px;
+      }
+      @include sp {
+        // text-align: center;
+        width: calc(100% - 20px);
+      }
+
+      .p-service__product--text1 {
+        height: 174px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        opacity: 0.8;
+        margin-bottom: 20px; //テキスト2では削除
+        @include tab {
+          margin-bottom: 10px;
+        }
+      }
+      
+      .p-service__product--text2 {
+        height: 174px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        opacity: 0.8;
+      }
+
+      h3 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        font-family: "M+ 1m",sans-serif; //英字の別途指定
+        padding-top: 17px;
+        padding-left: 19px;
+        @include tab {
+          padding-top: 20px;
+          padding-left: 11px;
+        }
+        @include sp {
+          padding-top: 19px;
+          padding-left: 10px;
+          font-size: 2.2rem;
+        }
+      }
+
+      P {
+        font-size: 1.6rem;
+        padding-top: 26px;
+        padding-left: 19px;
+        padding-right: 25px;
+        @include tab {
+          padding-top: 20px;
+          padding-left: 11px;
+          padding-right: 15px;
+        }
+        @include sp {
+          padding-top: 19px;
+          padding-left: 10px;
+          padding-right: 14px;
+        }
+      }
+    }
+  }
+
+  .p-service__takeout {
+    background-image: url("./../img/frontpage_p-service__content--takeout.png");
+    margin-right: 2.57%; //40px
+    @include tab {
+      margin-right: 20px;
+    }
+    @include sp {
+      margin: 0;
+    }
+  }
+
+  .p-service__eatin {
+    background-image: url("./../img/frontpage_p-service__content--eatin.png");
+    margin-left: 2.57%; //40px
+    @include tab {
+      margin-left: 20px;
+    }
+    @include sp {
+      margin-left: 0;
+      margin-top: 20px;
     }
   }
 }

@@ -1,0 +1,5 @@
+.u-cancel--opacity {
+  @include tab {
+    opacity: 0;
+  }
+}

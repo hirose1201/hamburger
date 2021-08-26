@@ -1,0 +1,6 @@
+.u-container__left {
+  width: 80.9%; //bodyに対しての数値
+  @include tab {
+    width: 100%; //bodyに対しての数値
+  }
+}

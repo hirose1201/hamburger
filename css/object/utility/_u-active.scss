@@ -1,0 +1,5 @@
+.u-active {
+  @include tab{
+    visibility: visible;
+  }
+}

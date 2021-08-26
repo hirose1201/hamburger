@@ -1,0 +1,38 @@
+.c-button--sidebar {
+  display: none;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 0;
+  @include tab {
+    display: block;
+    right: 17px;
+  }
+
+  span {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 32px;
+    background-color: #707070;
+    position: absolute;
+    display: block;
+  }
+
+  &::before {
+    top: 15px;
+    height: 6px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 15px;
+    height: 6px;
+    transform: rotate(-45deg);
+  }
+}

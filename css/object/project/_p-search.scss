@@ -1,29 +1,77 @@
 .p-search {
-  margin: 0 0 0 auto;
+  width: 35.2%; //leftに対しての数値
+  height: 46px;
+  margin-left: auto; //右寄せ
+  margin-right: 30px;
+  @include laptop {
+    width: 38%;
+  }
+  @include tab {
+    width: 65.5%;
+    margin: 38px 0;
+  }
+  @include sp {
+    width: 85.3%;
+  }
 
-  .p-search__container{
-    margin-right: 30px;
-  }
-  
-  input[type=text] {  
-    width: 396px;
+  .p-search__container {
     height: 46px;
-    background: #fff;
-    border: 1px solid #707070;  /* 枠線 */
-    border-radius: 0.8em;   /* 角丸 仮 */
+    white-space: nowrap; //改行禁止
+    position: relative;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      display: block;
+      content: ""; // 疑似要素に必須
+      background-image: url("./../img/frontpage_p-serch.png");
+      background-position: center; 
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%; //上下中央  
+      left: 15px;
+      transform: translateY(-50%); //上下中央
+      @include sp {
+        left: 45px;
+      }
+    }
+
+    input[type=text] {  
+      width: 72.5%; // p-searchに対して
+      height: 46px;
+      border: 1px solid #707070;  //枠線
+      border-radius: 0.67em;   //角丸 仮
+      margin-right: 14px; //検索窓の右側に隙間
+      background: #fff;
+      font-size: 2rem;
+      padding: 0 50px; //虫眼鏡用の隙間
+      @include tab {
+        text-align: left; //入力する文字を左寄せに
+        width: 72.5%;
+      }
+      @include sp {
+        width: 61.33%; 
+        margin-right: 12px; //検索窓の右側に隙間
+      }
+    }
+
+    input[type=submit]{
+      width: 25.6%; //136px
+      height: 46px;
+      background-image: linear-gradient(to bottom,#F2EDE9,#DED8D3);
+      border: 1px solid #707070;  // 枠線
+      border-radius: 0.67em;   //角丸 仮
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      @include tab {
+        width: 24.9%;
+      }
+      @include sp {
+        width: 20.8%;
+      }
+    }  
   }
-  
-  input[type=submit]{
-    width: 136px;
-    height: 46px;
-    background-color: #F2EDE9;
-    border: 1px solid #707070;  /* 枠線 */
-    border-radius: 0.67em;   /* 角丸 仮 */
-    font-size: 1.6rem;
-    font-weight: bold;
-    font-family: "M+ 1m";
-    text-align: center ;
-    cursor: pointer;
-  }
-  
 }

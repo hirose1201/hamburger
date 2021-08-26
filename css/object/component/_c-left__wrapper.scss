@@ -1,7 +1,0 @@
-.c-left__wrapper {
-  width: 80.9%; //bodyに対しての数値
-  height: calc(100% - 150px); //意味ないかも
-  @include tab {
-    width: 100%;
-  }
-}

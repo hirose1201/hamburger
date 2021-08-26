@@ -1,22 +1,46 @@
 .p-navigation {
-  background-color: #F2EDE9;
-  width: 100%; //l-sidebarに対して
-  height: 100%; //l-sidebarに対して、100%設定
-  @include tab{
-    width: 44%; //l-sidebarに対して
+  width: 100%; //p-sidebarに対して
+  height: 100%; //p-sidebarに対して、100%設定
+  background-color: #F2EDE9; 
+  @include tab {
+    width: 44%; //p-sidebarに対して
   }
-  
+  @include sp {
+    width: 87.5%;
+  }
+
+  h2 {
+    font-size: 3.4rem;
+    font-weight: bold;
+    padding-top: 82px; //2.9%
+    padding-left: 12.5%;
+    @include tab {
+      display: none;
+    }
+  }
+
   .p-navigation__main {
     font-size: 2.4rem;
     font-weight: bold;
-    padding-top: 217px;
-    padding-left: 38px;
-    line-height: 2; //仮
+    padding-top: 85px;
+    padding-left: 12.5%;
+    @include tab {
+      padding-top: 212px;
+      padding-left: 46px;
+    }
 
     .p-navigation__sub {
+      padding-top: 29px; //本来は40pxだが、liのpadding設定分と調整
+      padding-bottom: 40px;
+      padding-left: 5.5%; //本来は18%.18-12.5%
       font-size: 2.0rem;
       font-weight: normal;
-      line-height: 2; //仮
+      font-family: "M+ 1m",sans-serif; //英字・日本語が混在のため
+
+      li {
+        padding-top: calc(23px / 2);
+        padding-bottom: calc(23px / 2);
+      }
     }
   }
 }

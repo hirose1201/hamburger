@@ -1,0 +1,23 @@
+.p-sidebar {
+  height: 100%; //l-sidebarに対して
+  @include tab {
+    display: flex;
+    width: 100%; //l-sidebarに対して
+    height: 100%; //l-sidebarに対して
+    opacity: 0;
+    // visibility: hidden;
+    transition: none; //opacity .6s ease visibility .6s ease
+  }
+
+  .p-sidebar--cover {
+    display: none;
+    @include tab {
+      display: block;
+      width: 56%;
+      background-color: rgba(0,0,0,0.2);
+      }
+    @include sp {
+      width: 12.5%;
+    }
+  }
+}

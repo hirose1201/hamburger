@@ -1,0 +1,25 @@
+.p-header {
+  display: flex;
+  align-items: center; //上下中央
+  @include tab {
+    flex-flow: column; //縦並び
+    text-align: center; //左右中央
+  }
+
+  .p-header__title {
+    margin-left: 65px;
+    padding: 60px 0; 
+    @include tab {
+      margin-left: 0;
+      padding-top: 40px;
+      padding-bottom: 0;  //p-searchで調整
+    }
+    a {
+      font-size: 6.4rem;
+      font-weight: bold;
+      @include tab {
+        font-size: 4.0rem;
+      }
+    }
+  }
+}

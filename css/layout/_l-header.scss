@@ -1,27 +1,5 @@
 .l-header {
-  height: 217px;
-  background-color: #FFF7EF;
-  display: flex;
+  width: 100%; //c-left__wrapperに対しての数値
   align-items: center; //上下中央
-  @include tab {
-    width: 100%;
-    z-index: 50;
-    display: block;
-    text-align: center; //左右中央
-  }
-  @include sp {
-    height: 375px;
-  }
-
-  .l-header__title {
-    display: block;
-    font-size: 64px;
-    font-family: "Roboto";
-    margin-left: 67px;
-    @include tab {
-      margin-left: 0;
-      padding-top: 40px; //仮
-      padding-bottom: 35px; //仮
-    }
-  }
+  background-color: #FFF7EF;
 }
