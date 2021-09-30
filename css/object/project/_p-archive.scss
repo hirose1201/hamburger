@@ -1,0 +1,131 @@
+.p-archive {
+  width: 87.1%;
+  // height: 471px; //高さ指定は最終的に削除したい
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  @include tab {
+    width: 90.76%;
+    margin-bottom: 20px;
+    // height: 354.5px;
+  }
+  @include sp {
+    width: 89.3%;
+    height: auto;
+    flex-flow: column; //縦並び
+  }
+  
+  &__img {
+    width: 50%;
+    height: auto;
+    background-image: url("./../img/archive_c-archive.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center; 
+    // position: absolute;
+    @include sp {
+      width: 100%;
+      height: 230px;
+      background-position: center; 
+    }
+  }
+  
+  // // 画像
+  // &::before {
+    //   position: absolute;
+    //   top: 0;
+    //   @include sp {
+      //     width: 100%;
+      //     top: auto;
+      //   }
+      // }
+      
+      // 文章コンテンツ
+      &__content {
+        width: 50%; //676px
+        height: 100%;
+        background-color: #3C2B1C;
+        margin: 0 0 0 auto; //右寄せ
+        color: #FFF;
+        // position: absolute;
+    @include sp {
+      width: 100%;
+      margin: 0;
+    }
+
+    h3,h4,p {
+      padding-left: 63px; //4.65%
+      padding-right: 104px; 
+      @include laptop {
+        padding-right: 7.6%; //104px
+        padding-left: 9.3%;
+      }
+      @include tab {
+        padding-left: 34.7px;
+        padding-right: 59px;
+      }
+      @include sp {
+        padding-left: 5%; //17px
+        padding-right: 21.7%; //73px
+      }
+    }
+
+    h3 {
+      font-size: 3.6rem;
+      font-weight: bold;
+      padding-top: 53px;
+      @include tab {
+        font-size: 2.0rem;
+        padding-top: 30px;
+      }
+      @include sp {
+        padding-top: 31.5px;
+      }
+    }
+  
+    h4 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      padding-top: 47px;
+      @include tab {
+        font-size: 1.6rem;
+        padding-top: 24px;
+      }
+
+    }
+  
+    p {
+      font-size: 1.6rem;
+      padding-top: 17px;
+      line-height: 1.43;
+      @include tab {
+        padding-top: 10px;
+      }
+    }
+
+    &--button {
+      width: 292px;
+      height: 76px;
+      color: #707070;
+      background: #fff;
+      border-radius: 76px; //ボタンを正円
+      margin: 60px auto; //autoでボタンの中央寄せ
+      text-align: center; //文字の中央寄せ
+      font-size: 1.6rem;
+      font-weight: bold;
+      // display: flex;
+      // flex-flow: column; //縦並び
+      // align-items: center;
+      // justify-content: center;
+      display: block;
+      @include tab {
+        width: 163.16px;
+        height: 42.47px;
+        margin: 45px auto 40px auto; //autoでボタンの中央寄せ
+      }
+      @include sp {
+        margin: 40px auto 43px auto; //autoでボタンの中央寄せ
+      }
+    }
+  }
+}

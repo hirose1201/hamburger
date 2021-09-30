@@ -1,0 +1,13 @@
+.p-archives {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column; //縦並び    
+  @include tab {
+    margin-top: 37px;
+  }
+  @include sp {
+    margin-top: 19px;
+  }
+}

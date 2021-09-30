@@ -1,3 +1,6 @@
 .l-main {
   width: 100%;
+  display: flex;
+  flex-flow: column; //縦並び
+  align-items: center; //左右中央
 }

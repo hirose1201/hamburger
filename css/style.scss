@@ -21,8 +21,10 @@
 
   //componnet
   @import "./object/component/c-mainvisual__frontpage";
+  @import "./object/component/c-heading";
   @import "./object/component/c-button--hamburgermenu";
   @import "./object/component/c-button--sidebar";
+  @import "./object/component/c-subheading";
 
   //project
   @import "./object/project/p-header";
@@ -32,6 +34,9 @@
   @import "./object/project/p-sidebar";
   @import "./object/project/p-navigation";
   @import "./object/project/p-search";
+  @import "./object/project/p-archives";
+  @import "./object/project/p-archive";
+  @import "./object/project/p-pager";
 
   //utility
   @import "./object/utility/u-container__top";
